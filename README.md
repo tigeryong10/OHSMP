@@ -1,4 +1,4 @@
-# OHSMP Season III
+# OHSMP Season 3
 
 Single-page website for the OHSMP Minecraft server.
 

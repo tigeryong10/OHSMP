@@ -217,6 +217,21 @@ nav a:hover { color: #d7ffb6; }
   transform: translateX(-50%);
 }
 
+@media (min-width: 1100px) {
+  .hero {
+    height: clamp(520px, 33.333vw, 724px);
+    min-height: 0;
+  }
+
+  .hero-image {
+    object-fit: contain;
+    background: #0b2113;
+  }
+
+  .hero-content { padding: 92px 0 52px; }
+  .hero h1 { font-size: clamp(48px, 4.5vw, 72px); }
+}
+
 .section { padding: 110px max(28px, calc((100vw - 1250px) / 2)); }
 .section-heading { max-width: 720px; margin-bottom: 50px; }
 .section-heading h2, .join-card h2 {
