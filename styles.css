@@ -72,26 +72,16 @@ button { color: inherit; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   color: inherit;
-  font-family: var(--pixel);
-  font-size: 16px;
   line-height: 1;
   text-decoration: none;
-  text-shadow: 0 2px 0 rgba(0,0,0,.35);
 }
 
-.brand em {
-  color: #ff4438;
-  font-style: normal;
-}
-
-.brand-cube {
-  width: 24px;
-  height: 24px;
-  border: 3px solid #fff;
-  background: var(--red);
-  box-shadow: inset -5px -5px rgba(92, 11, 9, .3), 3px 3px 0 rgba(0,0,0,.35);
+.brand-logo {
+  display: block;
+  width: clamp(128px, 12vw, 168px);
+  height: auto;
+  filter: drop-shadow(0 3px 2px rgba(0,0,0,.45));
 }
 
 nav { display: flex; align-items: center; gap: 28px; }
@@ -469,6 +459,7 @@ footer {
   background: #0c160f;
 }
 .footer-brand { color: #fff; }
+.footer-brand .brand-logo { width: clamp(160px, 16vw, 210px); }
 footer p { margin: 0; font-size: 14px; text-align: center; }
 .footer-ip { justify-self: end; border: 0; color: #b9f87c; background: transparent; font-family: var(--pixel); font-size: 9px; cursor: pointer; }
 
@@ -502,7 +493,7 @@ footer p { margin: 0; font-size: 14px; text-align: center; }
   body { font-size: 16px; }
   .site-header { padding: 20px; }
   nav a:not(.nav-join) { display: none; }
-  .brand { font-size: 12px; }
+  .brand-logo { width: 128px; }
   .hero { min-height: 760px; }
   .hero-content { width: calc(100% - 40px); padding-top: 110px; }
   .hero-image { object-position: 58% center; }
