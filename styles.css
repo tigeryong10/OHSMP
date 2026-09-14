@@ -239,6 +239,74 @@ nav a:hover { color: #d7ffb6; }
     repeating-linear-gradient(0deg, transparent 0 31px, rgba(57, 98, 58, .12) 32px),
     repeating-linear-gradient(90deg, transparent 0 31px, rgba(57, 98, 58, .12) 32px);
 }
+.server-status-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 50px;
+  padding: 26px 30px;
+  overflow: hidden;
+  color: #fff;
+  border: 1px solid #183e22;
+  background: #0c1d12;
+  box-shadow: 7px 7px 0 rgba(38, 66, 40, .16);
+}
+.server-status-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .06;
+  background-image: repeating-linear-gradient(45deg, transparent 0 18px, #fff 18px 19px);
+}
+.server-status-summary, .server-population {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.server-status-summary { gap: 18px; }
+.server-status-light {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  background: #f0c35b;
+  box-shadow: 0 0 0 6px rgba(240,195,91,.13), 0 0 18px rgba(240,195,91,.55);
+}
+.server-status-panel[data-status="online"] .server-status-light {
+  background: #7cff64;
+  box-shadow: 0 0 0 6px rgba(124,255,100,.13), 0 0 20px rgba(124,255,100,.6);
+  animation: pulse 2s infinite;
+}
+.server-status-panel[data-status="offline"] .server-status-light {
+  background: #ff5548;
+  box-shadow: 0 0 0 6px rgba(255,85,72,.13), 0 0 18px rgba(255,85,72,.5);
+}
+.server-status-panel[data-status="unavailable"] .server-status-light {
+  background: #93a096;
+  box-shadow: 0 0 0 6px rgba(147,160,150,.12);
+}
+.server-status-kicker {
+  margin: 0 0 5px;
+  color: #a9c7ad;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+#server-status-text { font-size: clamp(22px, 2.5vw, 32px); }
+.server-population { gap: 16px; }
+.server-population > strong {
+  color: #b9f87c;
+  font-family: var(--pixel);
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1;
+}
+.server-population div { display: flex; flex-direction: column; }
+.server-population span { font-weight: 900; }
+.server-population small { margin-top: 3px; color: #a9c7ad; font-size: 13px; }
 .info-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -503,6 +571,8 @@ footer p { margin: 0; font-size: 14px; text-align: center; }
   .server-address code { flex: 1; font-size: 11px; }
   .copy-button { padding: 9px 10px; }
   .section { padding: 78px 20px; }
+  .server-status-panel { align-items: flex-start; flex-direction: column; padding: 24px; }
+  .server-population { width: 100%; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.15); }
   .section-heading { margin-bottom: 36px; }
   .section-heading > p:last-child { font-size: 18px; }
   .info-grid, .rules-grid, .mods-grid { grid-template-columns: 1fr; }

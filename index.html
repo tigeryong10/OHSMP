@@ -64,6 +64,23 @@
       </section>
 
       <section class="section section-info" id="info">
+        <div class="server-status-panel" id="server-status" data-status="checking" aria-live="polite">
+          <div class="server-status-summary">
+            <span class="server-status-light" aria-hidden="true"></span>
+            <div>
+              <p class="server-status-kicker">Live server</p>
+              <strong id="server-status-text">Checking status…</strong>
+            </div>
+          </div>
+          <div class="server-population">
+            <strong id="server-player-count">—</strong>
+            <div>
+              <span id="server-player-label">players online</span>
+              <small id="server-player-capacity">Checking capacity</small>
+            </div>
+          </div>
+        </div>
+
         <div class="section-heading">
           <p class="eyebrow">The essentials</p>
           <h2>Server information</h2>
