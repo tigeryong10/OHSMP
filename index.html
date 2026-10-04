@@ -109,19 +109,22 @@
           </article>
           <article class="info-card">
             <span class="card-icon" aria-hidden="true">◎</span>
-            <p class="card-label">Spawn radius</p>
-            <p class="card-value">16 chunks</p>
+            <p class="card-label">Overworld</p>
+            <p class="card-value">Open</p>
+            <p class="card-note">World border: ±1,750 blocks</p>
+            <p class="card-note">Spawn radius: 16 chunks</p>
           </article>
           <article class="info-card">
             <span class="card-icon nether-icon" aria-hidden="true">⬢</span>
             <p class="card-label">Nether</p>
             <p class="card-value">Open</p>
+            <p class="card-note">World border: ±5,000 blocks</p>
           </article>
           <article class="info-card">
             <span class="card-icon end-icon" aria-hidden="true">✦</span>
             <p class="card-label">The End</p>
-            <p class="card-value">Closed</p>
-            <p class="card-note">Opening September 21</p>
+            <p class="card-value">Open</p>
+            <p class="card-note">World border: ±3,500 blocks</p>
           </article>
           <article class="info-card">
             <span class="card-icon" aria-hidden="true">⌖</span>
@@ -153,11 +156,13 @@
         <div class="rules-grid">
           <article class="rule-card">
             <span class="rule-number">01</span>
-            <h3>No hacking</h3>
+            <h3>No hacking or world data exploits</h3>
             <p>
-              This includes x-ray, freecam, “quality of life” clients, and similar
-              tools. The anticheat may not stop a cheat immediately, but it records
-              activity and notifies the admins.
+              This includes x-ray, freecam, “quality of life” cheat clients, seed
+              cracking, and similar tools. Downloading, copying, or reconstructing
+              server chunks or other world data is also prohibited, as is using that
+              data to find hidden builds, structures, or resources. The anticheat may
+              not stop a cheat immediately, but it records activity and notifies the admins.
             </p>
           </article>
           <article class="rule-card">
@@ -183,21 +188,32 @@
           </article>
           <article class="rule-card">
             <span class="rule-number">05</span>
+            <h3>Respect player shops</h3>
+            <p>
+              You may take items from chests, shulker boxes, and other containers at
+              spawn unless they are part of a player shop. If a sign or similar notice
+              lists a trade, such as “X diamonds for Y items,” pay the stated price
+              before taking the items for sale. Taking shop items without paying is
+              stealing and can result in warnings or bans.
+            </p>
+          </article>
+          <article class="rule-card">
+            <span class="rule-number">06</span>
             <h3>Don’t cause lag</h3>
             <p>Never intentionally lag or crash the server.</p>
           </article>
           <article class="rule-card">
-            <span class="rule-number">06</span>
+            <span class="rule-number">07</span>
             <h3>No loopholes</h3>
             <p>Loopholes will be patched, and exploiting them can still get you banned.</p>
           </article>
           <article class="rule-card">
-            <span class="rule-number">07</span>
+            <span class="rule-number">08</span>
             <h3>Use common sense</h3>
             <p>If you have to ask whether something breaks a rule, it probably does.</p>
           </article>
           <article class="rule-card">
-            <span class="rule-number">08</span>
+            <span class="rule-number">09</span>
             <h3>Respect the admins</h3>
             <p>Being rude to the admins can result in a ban.</p>
           </article>
@@ -215,7 +231,7 @@
           <ol class="warning-list">
             <li>
               <span class="warning-count">1</span>
-              <div><strong>One warning</strong><p>A random item is removed from your Ender Chest or inventory.</p></div>
+              <div><strong>One warning</strong><p>24-hour ban and a random item removed from your Ender Chest or inventory.</p></div>
             </li>
             <li>
               <span class="warning-count">2</span>
@@ -254,36 +270,27 @@
             <span class="sr-only">Search plugins and mods</span>
             <input id="mod-search" type="search" placeholder="Search features…" autocomplete="off" />
           </label>
-          <p><strong id="mod-count">27</strong> features</p>
+          <p><strong id="mod-count">18</strong> features</p>
         </div>
 
         <div class="mods-grid" id="mods-grid">
-          <article class="mod-card"><span>AFK</span><h3>AFK Display</h3><p>Displays [AFK] next to your name if you do not move for more than 5 minutes.</p></article>
           <article class="mod-card"><span>MOB</span><h3>Age Lock</h3><p>Name a mob “age_lock” and it will remain its current age.</p></article>
-          <article class="mod-card"><span>END</span><h3>Anti-Enderman Grief</h3><p>Prevents Endermen from picking up or placing blocks.</p></article>
           <article class="mod-card"><span>DEC</span><h3>Armour Statues</h3><p>Put Armour Stands in custom poses.</p></article>
           <article class="mod-card"><span>BLD</span><h3>Cauldron Concrete</h3><p>Drop concrete powder in a cauldron with water to harden it instantly.</p></article>
-          <article class="mod-card"><span>SEC</span><h3>Client Detector</h3><p>Detects hacked clients such as Meteor and automatically bans them. It is custom-built, with no public information to circumvent it.</p></article>
           <article class="mod-card"><span>XP</span><h3>Clumps</h3><p>Groups XP orbs to reduce lag and speed up XP absorption.</p></article>
           <article class="mod-card"><span>PVP</span><h3>Combat Log</h3><p>Kills players who log out during combat and disables firework use during combat.</p></article>
           <article class="mod-card"><span>NTH</span><h3>Custom Nether Portals</h3><p>Build Nether Portals in custom shapes and sizes.</p></article>
           <article class="mod-card"><span>LOD</span><h3>Distant Horizons</h3><p>With the client mod installed, you can see much farther.</p></article>
           <article class="mod-card"><span>CMD</span><h3>Essential Commands</h3><p>Adds /home (4 max), /back, /tpa, /rtp, and /spawn.</p></article>
           <article class="mod-card"><span>PVP</span><h3>Explosion Rebalance</h3><p>End crystals deal 20% damage and respawn anchors deal 30%. Subject to change.</p></article>
-          <article class="mod-card"><span>SEC</span><h3>Grim Anticheat</h3><p>Monitors cheating alongside additional anticheat systems. Don’t try to get around it.</p></article>
           <article class="mod-card"><span>MOB</span><h3>Husks Drop Sand</h3><p>Causes Husks to drop sand.</p></article>
           <article class="mod-card"><span>QOL</span><h3>Infinite Restock</h3><p>Villagers no longer run out of items or have to restock.</p></article>
-          <article class="mod-card"><span>DEC</span><h3>Mini Blocks</h3><p>Create miniature versions of blocks with a Stonecutter.</p></article>
           <article class="mod-card"><span>END</span><h3>Moog’s End Structures</h3><p>Adds vanilla-inspired structures to make the End more interesting.</p></article>
           <article class="mod-card"><span>QOL</span><h3>More Effective Tools</h3><p>Assigns effective tools to blocks that lack one—for example, pickaxes for glass and axes for cactus.</p></article>
           <article class="mod-card"><span>MOB</span><h3>More Mob Heads</h3><p>Mobs have a chance to drop their head on death.</p></article>
-          <article class="mod-card"><span>QOL</span><h3>Multiplayer Sleep</h3><p>Only one person needs to sleep to skip the night.</p></article>
-          <article class="mod-card"><span>PVP</span><h3>Player Head Drops</h3><p>Players drop their head on death.</p></article>
-          <article class="mod-card"><span>MOB</span><h3>Silence Mobs</h3><p>Name a mob “silence me” to stop it from making noise.</p></article>
           <article class="mod-card"><span>VOC</span><h3>Simple Voice Chat</h3><p>The server supports proximity voice chat when you install the client mod.</p></article>
           <article class="mod-card"><span>WTH</span><h3>Storm Channeling</h3><p>Throw a Channeling trident straight up from the top of the world to start a thunderstorm. Uses 60% durability.</p></article>
           <article class="mod-card"><span>QOL</span><h3>Timber</h3><p>Mine a full tree by breaking a log with an axe.</p></article>
-          <article class="mod-card"><span>STAT</span><h3>Track Statistics</h3><p>Tracks item statistics.</p></article>
           <article class="mod-card"><span>XP</span><h3>XP Bottling</h3><p>Convert levels into XP bottles by right-clicking an Enchantment Table with a bottle.</p></article>
         </div>
         <p class="empty-state" id="empty-state" hidden>No features match that search.</p>
@@ -294,7 +301,7 @@
           <div>
             <p class="eyebrow">Ready to play?</p>
             <h2>Join the whitelist.</h2>
-            <p>OHSMP is whitelisted for OHS students. Submit the form and you’ll be added soon after.</p>
+            <p>OHSMP is whitelisted for OHS students, OHS family members, and students applying to OHS. Submit the form and you’ll be added soon after.</p>
           </div>
           <div class="join-actions">
             <a
@@ -318,31 +325,41 @@
             <a href="assets/gallery/underwater.webp" target="_blank" rel="noopener noreferrer">
               <img src="assets/gallery/underwater.webp" alt="Armored player swimming above kelp beneath a starry blue sky" width="1920" height="1009" loading="lazy" decoding="async" />
             </a>
-            <figcaption>Under the surface</figcaption>
           </figure>
           <figure class="gallery-card">
             <a href="assets/gallery/mountain-sunset.webp" target="_blank" rel="noopener noreferrer">
               <img src="assets/gallery/mountain-sunset.webp" alt="Player with a shield on a snowy mountain at sunset" width="1920" height="1009" loading="lazy" decoding="async" />
             </a>
-            <figcaption>Sunset from the summit</figcaption>
           </figure>
           <figure class="gallery-card">
             <a href="assets/gallery/aurora-summit.webp" target="_blank" rel="noopener noreferrer">
               <img src="assets/gallery/aurora-summit.webp" alt="Green aurora stretching above a snowy peak with a player standing on top" width="1920" height="1009" loading="lazy" decoding="async" />
             </a>
-            <figcaption>Lights over the mountains</figcaption>
           </figure>
           <figure class="gallery-card">
             <a href="assets/gallery/moonlit-aurora.webp" target="_blank" rel="noopener noreferrer">
               <img src="assets/gallery/moonlit-aurora.webp" alt="Player looking toward a crescent moon and green aurora over snowy mountains" width="1920" height="1009" loading="lazy" decoding="async" />
             </a>
-            <figcaption>Moonlit skies</figcaption>
           </figure>
           <figure class="gallery-card">
             <a href="assets/gallery/golden-hour.webp" target="_blank" rel="noopener noreferrer">
               <img src="assets/gallery/golden-hour.webp" alt="Two armored players in a grassy field beside a lake at sunset" width="1920" height="1009" loading="lazy" decoding="async" />
             </a>
-            <figcaption>Golden hour</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <a href="assets/gallery/end-eclipse.webp" target="_blank" rel="noopener noreferrer">
+              <img src="assets/gallery/end-eclipse.webp" alt="Armored player facing Endermen beneath a glowing eclipse in the End" width="1920" height="1009" loading="lazy" decoding="async" />
+            </a>
+          </figure>
+          <figure class="gallery-card">
+            <a href="assets/gallery/red-aurora.webp" target="_blank" rel="noopener noreferrer">
+              <img src="assets/gallery/red-aurora.webp" alt="Player on a snowy treetop beneath a vivid red aurora" width="1920" height="1009" loading="lazy" decoding="async" />
+            </a>
+          </figure>
+          <figure class="gallery-card">
+            <a href="assets/gallery/jungle-canopy.webp" target="_blank" rel="noopener noreferrer">
+              <img src="assets/gallery/jungle-canopy.webp" alt="Wide view over a jungle canopy, river, and coastline at sunrise" width="1920" height="1009" loading="lazy" decoding="async" />
+            </a>
           </figure>
         </div>
       </section>
